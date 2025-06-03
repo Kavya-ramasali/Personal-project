@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danya | Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Danya</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Hi, I'm Danya</h1>
+        <p>A passionate student learning and growing.</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a student with a deep interest in technology and creativity. I enjoy building websites, learning new programming languages, and collaborating on interesting projects.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-card" onclick="showProjectDetails('Calculator App')">
+                <h3>Calculator App</h3>
+                <p>A simple calculator using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card" onclick="showProjectDetails('Weather App')">
+                <h3>Weather App</h3>
+                <p>Displays weather using a public API.</p>
+            </div>
+            <div class="project-card" onclick="showProjectDetails('Personal Website')">
+                <h3>Personal Website</h3>
+                <p>This portfolio you're viewing now!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yourname@example.com</p>
+        <p>GitHub: <a href="https://github.com/Kavya-ramasali" target="_blank">Kavya-ramasali</a></p>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p>This project is under development. Stay tuned for more updates!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Danya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
